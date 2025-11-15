@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PUTRA PANEL - FINAL (Upload Script)</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="particles"></canvas>
+
+<!-- LOGIN -->
+<div class="login-page" id="login-page">
+  <canvas id="login-particles"></canvas>
+  <div class="login-box">
+    <img class="login-photo" src="https://files.catbox.moe/40ldll.png" alt="foto-putra">
+    <div class="login-title"><span>𝐀𝖐𝖘𝖊𝖘 𝕻𝖆𝖓𝖊𝖑</span></div>
+    <input id="username" class="login-input" placeholder="Username" autocomplete="off" />
+    <input id="password" class="login-input" placeholder="Password" type="password" autocomplete="off" />
+    <button class="login-button" onclick="checkLogin()">MASUK</button>
+    <div id="login-error" class="login-error">Username atau Password salah!</div>
+    <div class="credit">© CREATE BY PUTRA</div>
+  </div>
+</div>
+
+<!-- LOADING -->
+<div id="loading" class="loading-screen"><div>Masuk ke Game<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div></div>
+
+<header>𝕻𝐔𝐓𝐑𝐀 𝕻𝐀𝐍𝐄𝐋 </header>
+
+<div class="container" id="main-container">
+  <!-- role card & feature card akan dirender lewat JS -->
+</div>
+
+<button class="close-btn" onclick="closePanel()">TUTUP PANEL</button>
+
+<div id="notif-container"></div>
+<div class="watermark">© CREATE BY PUTRA</div>
+<audio id="beep-sound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" preload="auto"></audio>
+
+<script src="js/notifications.js"></script>
+<script src="js/login.js"></script>
+<script src="js/panel.js"></script>
+<script src="js/upload.js"></script>
+<script src="js/particles.js"></script>
+</body>
+</html>
